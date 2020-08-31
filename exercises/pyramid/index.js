@@ -14,6 +14,19 @@
 //       ' ### '
 //       '#####'
 
-function pyramid(n) {}
+function pyramid(n) {
+
+    var pounds = '#';
+
+    for (var i = 0; i < n; i++) {
+       
+        if (i != 0) {
+            pounds += '##';
+        }
+
+        console.log(' '.repeat(n-(i+1)) + pounds + ' '.repeat(n-(i+1)));
+    }
+
+}
 
 module.exports = pyramid;
